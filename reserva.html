@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/logo.svg">
+
+    <title>Reserva - Sing It Loud!</title>
+</head>
+
+<body>
+    <header>
+        <!-- titulo y logo -->
+        <h1>Sing it Loud!</h1>
+        <!-- <img src="public/logo.svg" alt="logo"> -->
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="salas.html">Salas</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="form-card">
+            <form>
+                <!-- Formulario para realizar una reserva, noombre apellidos, fecha hora de inicio hora de fin numero de personas y sala -->
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" required>
+                <label for="hora-inicio">Hora de inicio</label>
+                <input type="time" name="hora-inicio" id="hora-inicio" required>
+                <label for="hora-fin">Hora de fin</label>
+                <input type="time" name="hora-fin" id="hora-fin" required>
+                <label for="numero-personas">Número de personas</label>
+                <input type="submit" value="Reservar">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© 2023 Sing It Loud!</p>
+        <!-- Enlaces de navegación y contacto -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="salas.html">Salas</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Reserva</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
