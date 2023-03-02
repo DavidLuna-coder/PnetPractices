@@ -13,6 +13,31 @@ a{
     color: white;
 }
 
+h1{
+    font-size: 6rem;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: -5rem;
+}
+
+button{
+    background-color: #AA267C;
+    color: white;
+    position: relative;
+    margin-left: 4rem;
+    margin-top: 8rem;
+    padding: 1.5rem 4.5rem;
+    border-radius: 0.35rem;
+    border: none;
+}
+
 footer {
     background-color: #1e1e1e;
     text-align: center;
@@ -20,6 +45,6 @@ footer {
     bottom: -13rem;
     left: 0;
     height: 12rem;
-    width: 80rem;
+    width: 79rem;
 
 }
