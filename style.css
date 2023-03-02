@@ -11,6 +11,7 @@ li{
 
 a{
     color: white;
+    text-decoration: none;
 }
 
 h1{
@@ -30,6 +31,7 @@ h2{
 button{
     background-color: #AA267C;
     color: white;
+    font-size: 1rem;
     position: relative;
     margin-left: 4rem;
     margin-top: 8rem;
