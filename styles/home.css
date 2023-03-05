@@ -29,6 +29,10 @@ h2 {
     font-size: 2rem;
 
 }
+/*
+.col-6{
+    width: 60%;
+}*/
 
 .landing-header {
 
@@ -62,7 +66,7 @@ h2 {
 .home-nav>ul {
     display: flex;
     justify-content: flex-end;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .header-content {
@@ -74,7 +78,7 @@ h2 {
     color: white;
     position: relative;
     gap: 20%;
-    left: 96px;
+    left: 6rem;
 }
 
 .header-content h1 {
@@ -92,38 +96,45 @@ h2 {
 .header-content>button {
     background-color: #AA267C;
     color: white;
-    max-width: 400px;
-    min-height: 160px;
+    max-width: 25rem;
+    min-height: 10rem;
     text-align: center;
     position: relative;
     font-family: 'Nunito', sans-serif;
     font-size: 3rem;
-    top: 150px;
+    top: 19.375rem;
     /* left: 3rem; */
-    border-radius: 11px;
+    border-radius: 0.688rem;
 }
 
 footer {
     background-color: #1e1e1e;
     width: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
+/*FOOTER BOOTSRAP*/
+footer>p{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
 .footer-nav {
-    margin-top: 3%;
     display: flex;
-    gap: 10rem;
-    margin-bottom: 2%;
+    justify-content: center;
 }
 
-.footer-nav>ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.row{
+    margin-top: 2rem;
+}
+
+.firstcol{
+    padding-right: 9rem;
+}
+
+.secondcol{
+    padding-left: 7rem;
 }
 
 a:hover {
@@ -144,7 +155,7 @@ a:hover {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color: #0087ca;
@@ -161,9 +172,10 @@ p {
     color: white;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1300px) {
     .header-content {
-        top: 100px;
+        top: 4rem;
+        left: 3rem;
     }
 
     .header-content h1 {
@@ -174,7 +186,21 @@ p {
         font-size: 2rem;
     }
 
-    
+    .header-content > button {
+        width: 18.75rem;
+        min-height: 7.25rem;
+        font-size: 2rem;
+        left: 0;
+        top: 6rem;
+    }
+
+    .home-nav {
+        position: relative;
+        right: 4vw;
+        top: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -205,8 +231,8 @@ p {
     }
 
     .header-content > button {
-        width: 300px;
-        min-height: 120px;
+        width: 18.75rem;
+        min-height: 7.25rem;
         font-size: 2rem;
         left: 0;
         top: 0;
