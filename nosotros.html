@@ -87,10 +87,10 @@
             </section>
             <section id="mapa">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3389.763963399172!2d-6.141637740775219!3d36.68625889360571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dc6e84844a39f%3A0x6dac3ef5f3d0ffea!2sJerez%20de%20la%20Frontera%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1677656434759!5m2!1ses!2ses"
+                    class= "mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3389.763963399172!2d-6.141637740775219!3d36.68625889360571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dc6e84844a39f%3A0x6dac3ef5f3d0ffea!2sJerez%20de%20la%20Frontera%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1677656434759!5m2!1ses!2ses"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img src="./images/ubicacion.png" alt="ubicacion">
+                <img src="./images/ubicacion.png" class="ubicacion" alt="ubicacion">
                 <h2>Encuéntranos</h2>
             </section>
         </article>
@@ -123,7 +123,7 @@
             </article>
             <article>
                 <h3>Torneos y competiciones</h3>
-                <img src="./images/trofeo.jpg" alt="trofeo">
+                <img src="./images/trofeo.jpg" class="trofeo" alt="trofeo">
                 <p>¡Participa en nuestros torneos y competiciones de karaoke! Demuestra tus habilidades de canto y
                     compite
                     con otros
@@ -136,16 +136,33 @@
         </aside>
     </div>
     <footer>
-        <p>© 2023 Sing It Loud!</p>
-        <nav>
+        <!-- enlaces de navegación y contacto -->
+        <nav class="footer-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="salas.html">Salas</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="reserva.html">Reserva</a></li>
-                <li><a href="mailto:singitloud@gmail.com">Contacto</a></li>
+                <div class="row">
+                    <div class="col-6 firstcol">
+                        <li><a href="index.html">Home</a></li>
+                    </div>
+                    <div class="col-6 secondcol">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 firstcol">
+                        <li><a href="salas.html">Salas</a></li>
+                    </div>
+                    <div class="col-6 secondcol">
+                        <li><a href="reserva.html">Reserva</a></li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 firstcol">
+                        <li><a href="mailto:singitloud@gmail.com">Contacto</a></li>
+                    </div>
+                </div>
             </ul>
         </nav>
+        <p>© 2023 Sing It Loud!</p>
     </footer>
 </body>
 

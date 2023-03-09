@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+p {
+    color: white;
+    margin-left: 0.5rem;
+}
+
 li a {
     color: white;
     text-decoration: none;
@@ -9,6 +14,15 @@ li a {
 
 li a:hover {
     color: white;
+}
+
+h3{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+}
+
+footer li{
+    list-style: none;
 }
 
 .general-header {
@@ -83,7 +97,7 @@ li a:hover {
 }
 
 
-
+/*Primer parrafo*/
 .content-article {
     width: 70%;
     font-size: 1.5rem;
@@ -121,6 +135,17 @@ li a:hover {
     width: 30%;
 }
 
+/*Tamaño del mapa*/
+.mapa{
+    width: 90%;
+    height: 90%;
+}
+/*Imagen del simbolo de ubicacion*/
+.content-article .ubicacion{
+    width: 5%;
+    height: 10%;
+    padding-left: 1rem;
+}
 
 aside > article
 {
@@ -136,20 +161,85 @@ aside > article
     text-align: center;
     padding-bottom: 0;
 }
-
+/*Imagenes del aside*/
 img {
     width: 100%;
     height: 100%;
 }
-
+/*Imagen del trofeo (tiene distintas medidas que el resto)*/
+.trofeo{
+    width: 30%;
+    height: 20%;
+}
 
 footer {
     background-color: #1e1e1e;
     width: 100%;
     margin: 0;
 }
+/*FOOTER BOOTSRAP*/
+footer>p{
+    margin-top: 1rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    margin-top: 2rem;
+}
+
+.firstcol{
+    padding-right: 9rem;
+}
+
+.secondcol{
+    padding-left: 7rem;
+}
 
 @media screen and (max-width:1300px) {
+    /*Tamaño del logo*/
+    .general-header h1 {
+        font-size: 3rem;
+    }
+    /*Tamaño de fuente de la barra de navegacion*/
+    .general-navbar {
+        font-size: 1.5rem;
+    }
+    /*Primer parrafo*/
+    .content-article {
+        width: 70%;
+        font-size: 1rem;
+    }
+    /*Imagenes principales*/
+    .content-article img {
+        width: 60%;
+        height: 15rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .content-article>section {
+        padding: 3%;
+    }
+    /*Imagenes del aside*/
+    img {
+        width: 70%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+    /*imagen del simbolo de ubicacion*/
+    .content-article .ubicacion{
+        width: 5%;
+        height: 10%;
+    }
+}
+
+@media screen and (max-width:1200px) {
     .content{
         flex-direction: column;
     }
