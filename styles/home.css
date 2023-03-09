@@ -116,6 +116,7 @@ footer {
 /*FOOTER BOOTSRAP*/
 footer>p{
     margin-top: 1rem;
+    margin: 0;
     padding-bottom: 1rem;
     display: flex;
     justify-content: center;
