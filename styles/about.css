@@ -125,6 +125,7 @@ li a:hover {
 aside > article
 {
     border-bottom: 2px solid rgb(52, 45, 45);
+    text-align: center;
 }
 
 #bienvenida{
