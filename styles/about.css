@@ -4,7 +4,7 @@
 
 p {
     color: white;
-    margin-left: 0.5rem;
+    padding: 0.5rem;
 }
 
 li a {
@@ -16,12 +16,12 @@ li a:hover {
     color: white;
 }
 
-h3{
+h3 {
     text-decoration: underline;
     text-decoration-thickness: 0.1rem;
 }
 
-footer li{
+footer li {
     list-style: none;
 }
 
@@ -136,38 +136,40 @@ footer li{
 }
 
 /*Tamaño del mapa*/
-.mapa{
+.mapa {
     width: 90%;
     height: 90%;
 }
+
 /*Imagen del simbolo de ubicacion*/
-.content-article .ubicacion{
+.content-article .ubicacion {
     width: 5%;
     height: 10%;
     padding-left: 1rem;
 }
 
-aside > article
-{
+aside>article {
     border-bottom: 2px solid rgb(52, 45, 45);
     text-align: center;
 }
 
-#bienvenida{
+#bienvenida {
     align-items: center;
 }
 
-#bienvenida-text{
+#bienvenida-text {
     text-align: center;
     padding-bottom: 0;
 }
+
 /*Imagenes del aside*/
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
+
 /*Imagen del trofeo (tiene distintas medidas que el resto)*/
-.trofeo{
+.trofeo {
     width: 30%;
     height: 20%;
 }
@@ -176,78 +178,159 @@ footer {
     background-color: #1e1e1e;
     width: 100%;
     margin: 0;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
 }
+
 /*FOOTER BOOTSRAP*/
-footer>p{
-    margin-top: 1rem;
+footer>p {
+    margin-top: 2rem;
     margin: 0;
-    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
+    opacity: 40%;
 }
+
 .footer-nav {
     display: flex;
     justify-content: center;
 }
 
-.row{
+.footer-nav>ul {
+    width: 60%;
+}
+
+.row {
     margin-top: 2rem;
 }
 
-.firstcol{
+.firstcol {
     padding-right: 9rem;
 }
 
-.secondcol{
+.secondcol {
     padding-left: 7rem;
 }
 
+
+
 @media screen and (max-width:1300px) {
+
     /*Tamaño del logo*/
     .general-header h1 {
         font-size: 3rem;
     }
+
     /*Tamaño de fuente de la barra de navegacion*/
     .general-navbar {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
+
+    .general-navbar>li {
+        padding: 0 2% 0.2rem 2%;
+    }
+
+
     /*Primer parrafo*/
     .content-article {
         width: 70%;
         font-size: 1rem;
     }
+
     /*Imagenes principales*/
     .content-article img {
         width: 60%;
-        height: 15rem;
+        height: auto;
         margin-right: 1rem;
         margin-left: 1rem;
     }
+
     .content-article>section {
         padding: 3%;
     }
+
     /*Imagenes del aside*/
-    img {
+    aside img {
         width: 70%;
-        height: 60%;
+        height: auto;
         margin-bottom: 1rem;
+        padding-top: 1rem;
     }
+
     /*imagen del simbolo de ubicacion*/
-    .content-article .ubicacion{
+    .content-article .ubicacion {
         width: 5%;
-        height: 10%;
     }
+
+    #mapa {
+        flex-direction: column;
+        height: auto;
+    }
+
+    
+
 }
 
 @media screen and (max-width:1200px) {
-    .content{
+    .content {
         flex-direction: column;
     }
-    .content-article{
+
+    .content-article {
         width: 100%;
     }
-    .content-aside
-    {
+
+    .content-aside {
         width: 100%;
     }
+}
+
+@media screen and (max-width:800px) {
+
+    .content-article>section {
+        flex-direction: column;
+    }
+
+    .content-article>section>img {
+        width: 100%;
+        height: auto;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .general-navbar {
+        font-size: 0.8rem;
+    }
+
+    .general-navbar>li {
+        padding: 0 2% 0.2rem 2%;
+    }
+
+    .section-text {
+        width: 100%;
+    }
+
+    .section-text h2 {
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        padding: 1rem 1rem 0.5rem 1rem;
+    }
+
+    .footer-nav ul {
+        padding: 0;
+        width: 100%;
+    }
+
 }
