@@ -21,9 +21,7 @@ h3 {
     text-decoration-thickness: 0.1rem;
 }
 
-footer li {
-    list-style: none;
-}
+
 
 .general-header {
     background-color: #142034;
@@ -187,6 +185,10 @@ footer {
     font-size: 0.8rem;
 }
 
+
+footer li {
+    list-style: none;
+}
 /*FOOTER BOOTSRAP*/
 footer>p {
     margin-top: 2rem;
