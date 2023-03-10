@@ -57,12 +57,12 @@
 
                         <div class="row form-row"> <input class="col-md-8 " type="date" name="fecha" id="fecha"
                                 required>
-                            <input class="col-md-4" type="time" name="hora-inicio" id="hora-inicio" required>
+                            <input class="col-md-4" type="time" step="3600" name="hora-inicio" id="hora-inicio" required>
                         </div>
 
                         <div class="row form-row"> <input class="col-md-8" type="number" max="7" min="1"
                                 id="numero-personas" required>
-                            <input class="col-md-4" type="time" name="hora-fin" id="hora-fin" required>
+                            <input class="col-md-4" type="time" step="3600" name="hora-fin" id="hora-fin" required>
                         </div>
                         <div class="row form-row">
                             <select class="col-md-6" name="sala" id="">
@@ -75,7 +75,7 @@
                             </select>
                         </div>
                         <div class="row form-row">
-                            <input class="column-12 submit-btn" type="submit" value="Reservar">
+                            <input class="column-12 submit-btnd" type="submit" value="Reservar">
                         </div>
 
                     </form>
@@ -83,6 +83,7 @@
 
             </div>
         </div>
+        <img src="images/bar.jpg" class="hidden" alt="">
     </section>
     <footer>
         <!-- enlaces de navegación y contacto -->
