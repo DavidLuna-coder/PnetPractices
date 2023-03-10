@@ -267,10 +267,7 @@ footer>p {
         width: 5%;
     }
 
-    #mapa {
-        flex-direction: column;
-        height: auto;
-    }
+    
 
     
 
@@ -287,6 +284,14 @@ footer>p {
 
     .content-aside {
         width: 100%;
+    }
+    #mapa {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #mapa img{
+        margin-top: 2rem;
     }
 }
 
