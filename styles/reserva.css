@@ -95,7 +95,9 @@ footer li {
     margin-bottom: 2rem;
 }
 input{
-    padding: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid #5b626e;
 }
 
 .submit-btn
