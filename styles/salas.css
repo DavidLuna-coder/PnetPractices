@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+}
+
+/*BARRA NAVEGACION*/
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+}
+
+.general-header {
+    background-color: #142034;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.general-header h1 {
+    padding: 2%;
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.general-navbar {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.general-navbar > li {
+    border-right: 1px solid white;
+    padding: 0 10% 0.2rem 10%;
+    width: 25%;
+}
+
+.general-navbar>li:last-child {
+    border-right: none;
+}
+
+.general-navbar>li:hover {
+    background-color: #063147;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.125rem;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*TARJETAS*/
+.section-container {
+    background: rgb(38, 57, 89);
+    background: linear-gradient(135deg, rgba(38, 57, 89, 1) 0%, rgba(74, 16, 56, 1) 100%);
+    display: flex;
+    
+}
+
+.card{
+    width: 12rem;
+}
+
+.card h2{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+}
+
+.card a{
+    color: black;
+    font-style: none;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1e1e1e;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+
+footer li {
+    list-style: none;
+}
+/*FOOTER BOOTSRAP*/
+footer>p {
+    margin-top: 2rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 40%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav>ul {
+    width: 60%;
+}
+
+.row {
+    margin-top: 2rem;
+}
+
+.firstcol {
+    padding-right: 9rem;
+}
+
+.secondcol {
+    padding-left: 7rem;
+}
+
+@media screen and (max-width:1300px) {
+
+    /*Tamaño del logo*/
+    .general-header h1 {
+        font-size: 3rem;
+    }
+
+    /*Tamaño de fuente de la barra de navegacion*/
+    .general-navbar {
+        font-size: 1rem;
+    }
+
+    .general-navbar>li {
+        padding: 0 2% 0.2rem 2%;
+    }
+}
