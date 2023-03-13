@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /*BARRA NAVEGACION*/
@@ -78,24 +79,29 @@ li a:hover {
 .section-container {
     background: rgb(38, 57, 89);
     background: linear-gradient(135deg, rgba(38, 57, 89, 1) 0%, rgba(74, 16, 56, 1) 100%);
-    display: flex;
-    
 }
 
 .card{
     width: 12rem;
+    margin: 0.5rem;
+    border: none !important; 
+    border-radius: 0 m !important;
 }
 
 .card h2{
     color: black;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
+    display: flex;
+    justify-content: center;
 }
 
 .card a{
     color: black;
     font-style: none;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 /*FOOTER*/
