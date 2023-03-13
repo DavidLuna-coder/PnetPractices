@@ -29,10 +29,6 @@ h2 {
     font-size: 2rem;
 
 }
-/*
-.col-6{
-    width: 60%;
-}*/
 
 .landing-header {
 
@@ -111,30 +107,46 @@ footer {
     background-color: #1e1e1e;
     width: 100%;
     margin: 0;
+    padding: 2rem 2rem 1rem 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
 }
 
+
+footer li {
+    list-style: none;
+}
 /*FOOTER BOOTSRAP*/
-footer>p{
-    margin-top: 1rem;
+footer>p {
+    margin-top: 2rem;
     margin: 0;
-    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
+    opacity: 40%;
 }
+
 .footer-nav {
     display: flex;
     justify-content: center;
 }
 
-.row{
+.footer-nav>ul {
+    width: 60%;
+}
+
+.row {
     margin-top: 2rem;
 }
 
-.firstcol{
+.firstcol {
     padding-right: 9rem;
 }
 
-.secondcol{
+.secondcol {
     padding-left: 7rem;
 }
 
