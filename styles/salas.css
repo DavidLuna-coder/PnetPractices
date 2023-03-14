@@ -84,13 +84,19 @@ li a:hover {
     justify-content: center;
 }
 
-
 .card{
     width: 12rem;
     border: none !important; 
     border-radius: 0 m !important;
     margin: 1rem;
+    box-shadow: 5px 8px 5px #1e1e1e;
 }
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 5px 8px 5px #1e1e1e;
+}
+
 .col-sm-4{
     display: flex;
     justify-content: center;
@@ -110,6 +116,24 @@ li a:hover {
     text-decoration: none;
     display: flex;
     justify-content: center;
+}
+
+.card p{
+    position: relative;
+    right: -0.5rem;
+    top: 1.85rem;
+}
+
+.number{
+    position: relative;
+    right: -6.5rem;
+    top: -0.65rem;
+}
+.user{
+    width: 2rem;
+    position: relative;
+    right: -8rem;
+    top: -2.5rem;
 }
 
 /*FOOTER*/
