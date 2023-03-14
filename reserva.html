@@ -44,7 +44,7 @@
                 <h2>RESERVA</h2>
                 <div class="form-container">
 
-                    <form class="reservation-form container-sm">
+                    <form class="reservation-form container-sm" onsubmit="return validacion()">
                         <!-- Formulario para realizar una reserva, nombre apellidos, fecha hora de inicio hora de fin numero de personas y sala -->
 
                         <div class="row form-row">
@@ -55,23 +55,25 @@
                                 required>
                         </div>
 
-                        <div class="row form-row"> <input class="col-md-8 " type="date" name="fecha" id="fecha"
+                        <div class="row form-row">
+                            <input class="col-md-8 " type="date" name="fecha" id="fecha" required>
+                            <input class="col-md-4" type="time" step="3600" name="horaInicio" max="22:00" id="hora-inicio"
                                 required>
-                            <input class="col-md-4" type="time" step="3600" name="hora-inicio" id="hora-inicio" required>
                         </div>
 
                         <div class="row form-row"> <input class="col-md-8" type="number" placeholder="Numero de personas" max="7" min="1"
                                 id="numero-personas" required>
-                            <input class="col-md-4" type="time" step="3600" name="hora-fin" id="hora-fin" required>
+                            <input class="col-md-4" type="time" step="3600" name="horaFin" max="23:00"id="hora-fin" required>
                         </div>
                         <div class="row form-row">
-                            <select class="col-md-6" name="sala" id="">
-                                <option>Sala 1</option>
-                                <option>Sala 2</option>
-                                <option>Sala 3</option>
-                                <option>Sala 4</option>
-                                <option>Sala 5</option>
-                                <option>Sala 6</option>
+                            <select class="col-md-6" name="sala" id="options">
+                                <option value="-1">Selecciona una opcion</option>
+                                <option value="1">Sala 1</option>
+                                <option value="2">Sala 2</option>
+                                <option value="3">Sala 3</option>
+                                <option value="4">Sala 4</option>
+                                <option value="5">Sala 5</option>
+                                <option value="6">Sala 6</option>
                             </select>
                         </div>
                         <div class="row form-row">
@@ -115,3 +117,7 @@
         <p>© 2023 Sing It Loud!</p>
     </footer>
 </body>
+
+<script src="js/reserva.js"></script>
+
+</html>
