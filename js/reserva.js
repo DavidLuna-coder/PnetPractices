@@ -95,34 +95,34 @@ function changeRoom() {
 function displaySelectedRoom(room) {
   switch (room) {
     case roomList.none:
-      roomImage.classList.add("hidden");
+      roomImage.hidden = true;
       break;
     case roomList.room1:
       roomImage.src = roomImages.room1;
-      roomImage.classList.remove("hidden");
+      roomImage.hidden = false;
       break;
     case roomList.room2:
       roomImage.src = roomImages.room2;
-      roomImage.classList.remove("hidden");
+      roomImage.hidden = false;
       break;
     case roomList.room3:
       roomImage.src = roomImages.room3;
       ";";
-      roomImage.classList.remove("hidden");
+      roomImage.hidden = false;
       break;
     case roomList.room4:
       roomImage.src = roomImages.room4;
       ";";
-      roomImage.classList.remove("hidden");
+      roomImage.hidden = false;
       break;
     case roomList.room5:
       roomImage.src = roomImages.room5;
       ";";
-      roomImage.classList.remove("hidden");
+      roomImage.hidden = false;
       break;
     case roomList.room6:
       roomImage.src = roomImages.room6;
-      roomImage.classList.remove("hidden");
+      roomImage.hidden = false;
       break;
   }
 }
