@@ -2,7 +2,10 @@
     margin: 0;
     overflow-x: hidden;
 }
-
+.hidden
+{
+    display: none;
+}
 /*BARRA NAVEGACION*/
 li a {
     color: white;
@@ -97,6 +100,22 @@ li a:hover {
     box-shadow: 5px 8px 5px #1e1e1e;
 }
 
+
+.big-card
+{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    height: 90%;
+}
+.close-btn{
+    position: absolute;
+    right: 1rem;
+    top: 0rem;
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    cursor: pointer;
+}
 .col-sm-4{
     display: flex;
     justify-content: center;
