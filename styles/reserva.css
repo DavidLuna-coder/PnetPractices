@@ -33,7 +33,7 @@ footer li {
 
 .general-header h1 {
     padding: 2%;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -115,6 +115,12 @@ input{
     display: none;
 }
 
+#room-image
+{
+    width: 50%;
+    height: auto;
+    padding: 2%;
+}
 footer {
     background-color: #1e1e1e;
     width: 100%;

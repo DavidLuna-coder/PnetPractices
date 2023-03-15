@@ -1,3 +1,23 @@
+const roomList = {
+  none: 0,
+  room1: 1,
+  room2: 2,
+  room3: 3,
+  room4: 4,
+  room5: 5,
+  room6: 6,
+};
+
+const roomImages = {
+  room1: "images/sala1.jpg",
+  room2: "images/sala2.jpg",
+  room3: "images/sala3.jpg",
+  room4: "images/sala4.jpg",
+  room5: "images/sala5.jpg",
+  room6: "images/sala6.jpg",
+};
+const roomImage = document.getElementById("room-image");
+
 function setMinHours() {
   let startHour = document.forms[0].horaInicio;
   let endHour = document.forms[0].horaFin;
@@ -20,6 +40,8 @@ function validacion() {
   let startHour = document.forms[0].horaInicio;
   let endHour = document.forms[0].horaFin;
 
+  let room = document.forms[0].sala.selectedIndex;
+
   if (!validateName(name.value)) {
     alert("El nombre no es válido");
     return false;
@@ -37,6 +59,11 @@ function validacion() {
 
   if (!validateHours(startHour.value, endHour.value)) {
     alert("Las horas no son válidas");
+    return false;
+  }
+
+  if (room.value == -1) {
+    alert("Debe seleccionar una sala");
     return false;
   }
 }
@@ -58,4 +85,47 @@ function validateHours(startHour, endHour) {
   return start.getTime() < end.getTime();
 }
 
+function changeRoom() {
+  document.addEventListener("change", function () {
+    let room = document.forms[0].sala.selectedIndex;
+    displaySelectedRoom(room);
+  });
+}
+
+function displaySelectedRoom(room) {
+  switch (room) {
+    case roomList.none:
+      roomImage.classList.add("hidden");
+      break;
+    case roomList.room1:
+      roomImage.src = roomImages.room1;
+      roomImage.classList.remove("hidden");
+      break;
+    case roomList.room2:
+      roomImage.src = roomImages.room2;
+      roomImage.classList.remove("hidden");
+      break;
+    case roomList.room3:
+      roomImage.src = roomImages.room3;
+      ";";
+      roomImage.classList.remove("hidden");
+      break;
+    case roomList.room4:
+      roomImage.src = roomImages.room4;
+      ";";
+      roomImage.classList.remove("hidden");
+      break;
+    case roomList.room5:
+      roomImage.src = roomImages.room5;
+      ";";
+      roomImage.classList.remove("hidden");
+      break;
+    case roomList.room6:
+      roomImage.src = roomImages.room6;
+      roomImage.classList.remove("hidden");
+      break;
+  }
+}
+
 setMinHours();
+changeRoom();
