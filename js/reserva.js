@@ -107,17 +107,17 @@ function displaySelectedRoom(room) {
       break;
     case roomList.room3:
       roomImage.src = roomImages.room3;
-      ";";
+
       roomImage.hidden = false;
       break;
     case roomList.room4:
       roomImage.src = roomImages.room4;
-      ";";
+
       roomImage.hidden = false;
       break;
     case roomList.room5:
       roomImage.src = roomImages.room5;
-      ";";
+
       roomImage.hidden = false;
       break;
     case roomList.room6:
