@@ -46,6 +46,17 @@
 
                     <form class="reservation-form container-sm" onsubmit="return validacion()">
                         <!-- Formulario para realizar una reserva, nombre apellidos, fecha hora de inicio hora de fin numero de personas y sala -->
+                        <div class="row form-row">
+                            <select class="col-md-12" name="sala" id="options" required>
+                                <option value="">Selecciona una sala</option>
+                                <option value="1">Sala 1</option>
+                                <option value="2">Sala 2</option>
+                                <option value="3">Sala 3</option>
+                                <option value="4">Sala 4</option>
+                                <option value="5">Sala 5</option>
+                                <option value="6">Sala 6</option>
+                            </select>
+                        </div>
 
                         <div class="row form-row">
                             <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="col-12" required>
@@ -64,17 +75,6 @@
                         <div class="row form-row"> <input class="col-md-8" type="number" placeholder="Numero de personas" max="7" min="1"
                                 id="numero-personas" required>
                             <input class="col-md-4" type="time" step="3600" name="horaFin" max="23:00"id="hora-fin" required>
-                        </div>
-                        <div class="row form-row">
-                            <select class="col-md-6" name="sala" id="options">
-                                <option value="-1">Selecciona una opcion</option>
-                                <option value="1">Sala 1</option>
-                                <option value="2">Sala 2</option>
-                                <option value="3">Sala 3</option>
-                                <option value="4">Sala 4</option>
-                                <option value="5">Sala 5</option>
-                                <option value="6">Sala 6</option>
-                            </select>
                         </div>
                         <div class="row form-row">
                             <input class="column-12 submit-btnd" type="submit" value="Reservar">

@@ -119,14 +119,16 @@ footer {
     font-size: 0.8rem;
 }
 
+.footer-nav>ul {
+    width: 40%;
+}
 
 footer li {
     list-style: none;
 }
 /*FOOTER BOOTSRAP*/
 footer>p {
-    margin-top: 2rem;
-    margin: 0;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
     opacity: 40%;
@@ -137,20 +139,21 @@ footer>p {
     justify-content: center;
 }
 
-.footer-nav>ul {
-    width: 60%;
-}
-
 .row {
     margin-top: 2rem;
+    margin: 0;
 }
 
 .firstcol {
     padding-right: 9rem;
+    display: flex;
+    justify-content: center;
 }
 
 .secondcol {
     padding-left: 7rem;
+    display: flex;
+    justify-content: center;
 }
 
 a:hover {

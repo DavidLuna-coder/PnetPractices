@@ -8,7 +8,7 @@ const rooms = [
     sofa: false,
     barService: false,
     description:
-      "Sala 1 es una sala de karaoke con capacidad para 3 personas. Dispone de 2 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo reducido de personas ",
+      "Sala 1 es una sala de karaoke con capacidad de hasta 3 personas. Dispone de 2 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo reducido de personas. ",
   },
   {
     name: "Sala 2",
@@ -16,7 +16,7 @@ const rooms = [
     sofa: false,
     barService: false,
     description:
-      "Sala 2 es una sala de karaoke con capacidad para 5 personas. Dispone de 4 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo reducido de personas ",
+      "Sala 2 es una sala de karaoke con capacidad de hasta 5 personas. Dispone de 4 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke por un precio reducido. ",
   },
   {
     name: "Sala 3",
@@ -24,7 +24,7 @@ const rooms = [
     sofa: true,
     barService: false,
     description:
-      "Sala 3 es una sala de karaoke con capacidad para 6 personas. Dispone de 6 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar de una experiencia única sentados en el sofá.",
+      "Sala 3 es una sala de karaoke con capacidad de hasta 6 personas. Dispone de 6 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar de una experiencia única sentados en el sofá.",
   },
   {
     name: "Sala 4",
@@ -32,7 +32,7 @@ const rooms = [
     sofa: true,
     barService: false,
     description:
-      "Sala 4 es una sala de karaoke con capacidad para 6 personas. Dispone de 6 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar de una experiencia única sentados en el sofá.",
+      "Sala 4 es una sala de karaoke con capacidad de hasta 6 personas. Dispone de 6 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar del karaoke con la máxima comodidad.",
   },
   {
     name: "Sala 5",
@@ -40,7 +40,7 @@ const rooms = [
     sofa: true,
     barService: true,
     description:
-      "Sala 5 es una sala de karaoke con capacidad para 7 personas. Dispone de 6 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar de una experiencia única sentados en el sofá y con servicio de bar.",
+      "Sala 5 es una sala de karaoke con capacidad de hasta 7 personas. Dispone de 6 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar de una experiencia única sentados en el sofá y con servicio de bar.",
   },
   {
     name: "Sala 6",
@@ -48,7 +48,7 @@ const rooms = [
     sofa: true,
     barService: true,
     description:
-      "Sala 6 es una sala de karaoke con capacidad para 7 personas. Dispone de 7 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar de una experiencia única sentados en el sofá y con servicio de bar. Ideal para celebrar fiestas",
+      "Sala 6 es una sala de karaoke con capacidad de hasta 7 personas. Dispone de 7 micrófonos y una pantalla de 50 pulgadas. Excelente para disfrutar del karaoke con un grupo de personas que quiera disfrutar de una experiencia única sentados en el sofá y con servicio de bar. Ideal para celebrar fiestas",
   },
 ];
 

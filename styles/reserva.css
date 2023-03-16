@@ -94,6 +94,7 @@ footer li {
 .form-row {
     margin-bottom: 2rem;
 }
+
 input{
     padding: 0.75rem;
     border-radius: 0.3rem;
@@ -195,4 +196,10 @@ a:hover {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media screen and (max-width:770px){
+    .form-card{
+        height: 100%;
+    }
 }
