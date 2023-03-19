@@ -48,13 +48,12 @@ li a:hover {
     width: 25%;
 }
 
+
 .general-navbar>li:last-child {
     border-right: none;
 }
 
-.general-navbar>li:hover {
-    background-color: #063147;
-}
+
 
 .hover-underline-animation {
     display: inline-block;

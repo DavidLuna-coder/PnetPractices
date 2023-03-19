@@ -58,9 +58,6 @@ h3 {
     border-right: none;
 }
 
-.general-navbar>li:hover {
-    background-color: #063147;
-}
 
 .hover-underline-animation {
     display: inline-block;
