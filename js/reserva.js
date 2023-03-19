@@ -16,8 +16,21 @@ const roomImages = {
   room5: "images/sala5.jpg",
   room6: "images/sala6.jpg",
 };
-const roomImage = document.getElementById("room-image");
 
+const roomAlts = {
+  room1: "Imagen de tres chicas cantando juntas con un micrófono en la mano",
+  room2:
+    "Imagen que muestra un micrófono enfocado y al fondo varias personas desenfocadas",
+  room3:
+    "Imagen que muestran a 5, 3 mujeres y dos hombres, cantando juntos en un karaoke",
+  room4: "Imagen que muestra un micrófono en primer plano",
+  room5:
+    "Imagen que muestra a una chica cantando con un micrófono y a 4 personas bailando detrás",
+  room6:
+    "Imagen que muestra un micrófono en un escenario y muchas personas desenfocadas de público.",
+};
+const roomImage = document.getElementById("room-image");
+roomImage.alt = "Imagen de la sala";
 function setMinHours() {
   let startHour = document.forms[0].horaInicio;
   let endHour = document.forms[0].horaFin;
@@ -99,29 +112,32 @@ function displaySelectedRoom(room) {
       break;
     case roomList.room1:
       roomImage.src = roomImages.room1;
+      roomImage.alt = roomAlts.room1;
       roomImage.hidden = false;
       break;
     case roomList.room2:
       roomImage.src = roomImages.room2;
+      roomImage.alt = roomAlts.room2;
       roomImage.hidden = false;
       break;
     case roomList.room3:
       roomImage.src = roomImages.room3;
-
+      roomImage.alt = roomAlts.room3;
       roomImage.hidden = false;
       break;
     case roomList.room4:
       roomImage.src = roomImages.room4;
-
+      roomImage.alt = roomAlts.room4;
       roomImage.hidden = false;
       break;
     case roomList.room5:
       roomImage.src = roomImages.room5;
-
+      roomImage.alt = roomAlts.room5;
       roomImage.hidden = false;
       break;
     case roomList.room6:
       roomImage.src = roomImages.room6;
+      roomImage.alt = roomAlts.room6;
       roomImage.hidden = false;
       break;
   }
