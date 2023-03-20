@@ -29,11 +29,10 @@
         <h1>Sing it Loud!</h1>
         <!-- <img src="public/logo.svg" alt="logo"> -->
         <nav class="general-navbar">
-
-            <li><a href="../">Home</a></li>
-            <li><a href="salas.html">Salas</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="reserva.html">Reserva</a></li>
+            <a href="../">Home</a>
+            <a href="salas.html">Salas</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="reserva.html">Reserva</a>
 
         </nav>
     </header>
@@ -74,7 +73,7 @@
 
                         <div class="row form-row"> <input class="col-md-8" type="number" placeholder="Numero de personas" max="7" min="1"
                                 id="numero-personas" required>
-                            <input class="col-md-4" type="time" step="3600" name="horaFin" max="23:00"id="hora-fin" required>
+                            <input class="col-md-4" type="time" step="3600" name="horaFin" max="23:00" id="hora-fin" required>
                         </div>
                         <div class="row form-row">
                             <input class="column-12 submit-btnd" type="submit" value="Reservar">
@@ -90,29 +89,27 @@
     <footer>
         <!-- enlaces de navegación y contacto -->
         <nav class="footer-nav">
-            <ul>
-                <div class="row">
-                    <div class="col-6 firstcol">
-                        <li><a href="index.html">Home</a></li>
-                    </div>
-                    <div class="col-6 secondcol">
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                    </div>
+            <div class="row">
+                <div class="col-6 firstcol">
+                    <a href="index.html">Home</a>
                 </div>
-                <div class="row">
-                    <div class="col-6 firstcol">
-                        <li><a href="salas.html">Salas</a></li>
-                    </div>
-                    <div class="col-6 secondcol">
-                        <li><a href="reserva.html">Reserva</a></li>
-                    </div>
+                <div class="col-6 secondcol">
+                    <a href="nosotros.html">Nosotros</a>
                 </div>
-                <div class="row">
-                    <div class="col-6 firstcol">
-                        <li><a href="mailto:singitloud@gmail.com">Contacto</a></li>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col-6 firstcol">
+                    <a href="salas.html">Salas</a>
                 </div>
-            </ul>
+                <div class="col-6 secondcol">
+                    <a href="reserva.html">Reserva</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 firstcol">
+                    <a href="mailto:singitloud@gmail.com">Contacto</a>
+                </div>
+            </div>
         </nav>
         <p>© 2023 Sing It Loud!</p>
     </footer>

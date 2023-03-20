@@ -23,6 +23,7 @@ footer li {
     list-style: none;
 }
 
+/*BARRA NAVEGACION*/
 .general-header {
     background-color: #142034;
     color: white;
@@ -31,9 +32,18 @@ footer li {
     align-items: center;
 }
 
+a:hover{
+    color: white !important;
+}
+
+.general-header a{
+    color: white;
+    text-decoration: none;
+}
+
 .general-header h1 {
     padding: 2%;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -41,21 +51,12 @@ footer li {
     display: flex;
     width: 100%;
     list-style: none;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
 }
 
-
-.general-navbar>li {
-    border-right: 1px solid white;
-    width: 25%;
-}
-
-.general-navbar>li:last-child {
-    border-right: none;
-}
 
 
 
@@ -115,41 +116,34 @@ input{
     height: auto;
     padding: 2%;
 }
+/*FOOTER*/
 footer {
     background-color: #1e1e1e;
     width: 100%;
-    margin: 0;
-    padding: 2rem 2rem 1rem 2rem;
+    height: 8rem;
+    padding: 2rem;
     display: flex;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
 }
 
-
-footer li {
-    list-style: none;
-}
-
 /*FOOTER BOOTSRAP*/
 footer>p {
-    margin-top: 2rem;
-    margin: 0;
+    position: relative;
+    top: 3.5rem;
+    height: 1rem;
+    right: 2.75rem;
     display: flex;
     justify-content: center;
     opacity: 40%;
     color: white;
 }
 
-.footer-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-nav>ul {
-    width: 60%;
+footer a{
+    color: white;
+    text-decoration: none;
 }
 
 .row {
@@ -157,11 +151,18 @@ footer>p {
 }
 
 .firstcol {
-    padding-right: 9rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 7rem;
 }
 
 .secondcol {
-    padding-left: 7rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 15rem;
+    top: 0.25rem;
 }
 
 a:hover {
@@ -170,6 +171,7 @@ a:hover {
 
 .footer-nav a:hover {
     text-decoration: underline;
+    color: white;
 }
 
 .hover-underline-animation {
@@ -193,6 +195,23 @@ a:hover {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media screen and (max-width:1300px) {
+
+    /*Tamaño del logo*/
+    .general-header h1 {
+        font-size: 3rem;
+    }
+
+    /*Tamaño de fuente de la barra de navegacion*/
+    .general-navbar {
+        font-size: 1rem;
+        padding: 0 2% 0.2rem 2%;
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
 
 @media screen and (max-width:770px){
