@@ -5,6 +5,10 @@
 body{
     height: 100vh;
 }
+
+form label{
+    display:none;
+}
 .hover-underline-animation {
     display: inline-block;
     position: relative;
