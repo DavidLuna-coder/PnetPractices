@@ -43,7 +43,7 @@ nav a:hover{
     list-style: none;
     font-size: 2rem;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
 }
 
