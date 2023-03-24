@@ -32,18 +32,8 @@ const roomAlts = {
 const roomImage = document.getElementById("room-image");
 roomImage.alt = "Imagen de la sala";
 function setMinHours() {
-  let startHour = document.forms[0].horaInicio;
-  let endHour = document.forms[0].horaFin;
-  let now = new Date();
-  let hour = now.getHours();
-  let minutes = now.getMinutes();
-  if (minutes > 1) {
-    startHour.min = (hour + 1).toString() + ":00";
-    endHour.min = (hour + 2).toString() + ":00";
-  } else {
-    startHour.min = hour.toString() + ":00";
-    endHour.min = (hour + 1).toString() + ":00";
-  }
+  let fecha = document.forms[0].fecha;
+  fecha.min = new Date().toISOString().split("T")[0];
 }
 
 function validacion() {
@@ -52,6 +42,7 @@ function validacion() {
 
   let startHour = document.forms[0].horaInicio;
   let endHour = document.forms[0].horaFin;
+  let date = document.forms[0].fecha;
 
   let room = document.forms[0].sala.selectedIndex;
 
@@ -65,7 +56,7 @@ function validacion() {
     return false;
   }
 
-  if (!validateDate) {
+  if (!validateDate(fecha.value)) {
     alert("La fecha no es válida");
     return false;
   }
@@ -79,6 +70,8 @@ function validacion() {
     alert("Debe seleccionar una sala");
     return false;
   }
+
+  return true;
 }
 
 function validateName(name) {
@@ -86,15 +79,27 @@ function validateName(name) {
     /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
   return nameRegex.test(name);
 }
-
 function validateDate(date) {
-  return date < new Date.toISOString().split("T")[0];
+  let now = new Date();
+  return new Date(date) >= new Date(now.getDate());
 }
-
 function validateHours(startHour, endHour) {
+  let today = new Date();
+  let date = document.forms[0].fecha.value;
   let start = new Date("1970-01-01T" + startHour + ":00");
   let end = new Date("1970-01-01T" + endHour + ":00");
-
+  if (date === today.toISOString().split("T")[0]) {
+    let hour = today.getHours();
+    let minutes = today.getMinutes();
+    if (minutes > 1) {
+      hour += 1;
+    }
+    console.log(startHour);
+    console.log(hour);
+    if (start.getHours() < hour) {
+      return false;
+    }
+  }
   return start.getTime() < end.getTime();
 }
 
