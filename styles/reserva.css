@@ -3,14 +3,35 @@
     box-sizing: border-box;
 }
 
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
 
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.125rem;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
 
-li a {
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav a {
     color: white;
     text-decoration: none;
 }
 
-li a:hover {
+nav a:hover {
     color: white;
 }
 
@@ -32,14 +53,6 @@ footer li {
     align-items: center;
 }
 
-a:hover{
-    color: white !important;
-}
-
-.general-header a{
-    color: white;
-    text-decoration: none;
-}
 
 .general-header h1 {
     padding: 2%;
@@ -79,28 +92,29 @@ a:hover{
 }
 
 
-.card-content{
+.card-content {
     width: 70%;
     text-align: center;
     margin-top: 2rem;
 }
-.card-content h2{
+
+.card-content h2 {
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
     margin-bottom: 2rem;
 }
+
 .form-row {
     margin-bottom: 2rem;
 }
 
-input{
+input {
     padding: 0.75rem;
     border-radius: 0.3rem;
     border: 1px solid #5b626e;
 }
 
-.submit-btn
-{
+.submit-btn {
     background-color: #142034;
     color: white;
     height: 3rem;
@@ -110,12 +124,12 @@ input{
 }
 
 
-#room-image
-{
+#room-image {
     width: 50%;
     height: auto;
     padding: 2%;
 }
+
 /*FOOTER*/
 footer {
     background-color: #1e1e1e;
@@ -141,7 +155,7 @@ footer>p {
     color: white;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 }
@@ -165,37 +179,14 @@ footer a{
     top: 0.25rem;
 }
 
-a:hover {
-    color: white;
-}
+
 
 .footer-nav a:hover {
     text-decoration: underline;
     color: white;
 }
 
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-}
 
-.hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 0.125rem;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 
 @media screen and (max-width:1300px) {
 
@@ -214,8 +205,8 @@ a:hover {
 
 }
 
-@media screen and (max-width:770px){
-    .form-card{
+@media screen and (max-width:770px) {
+    .form-card {
         height: 100%;
     }
 }
