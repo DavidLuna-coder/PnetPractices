@@ -9,10 +9,12 @@ body{
 form label{
     display:none;
 }
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
 }
+
 .form-container{
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
@@ -66,7 +68,6 @@ footer li {
     align-items: center;
 }
 
-
 .general-header h1 {
     padding: 2%;
     font-size: 4rem;
@@ -115,7 +116,7 @@ footer li {
     height: 80%;
     margin-top: 0rem;
     overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-x: hidden;
     font-size: 2rem;
 }
 
