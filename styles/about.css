@@ -22,7 +22,7 @@ h3 {
     align-items: center;
 }
 
-a:hover{
+nav a:hover{
     color: white;
 }
 
@@ -43,7 +43,7 @@ a:hover{
     list-style: none;
     font-size: 2rem;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
 }
 

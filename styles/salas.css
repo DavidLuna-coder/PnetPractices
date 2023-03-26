@@ -2,9 +2,6 @@
     margin: 0;
 }
 
-.hidden {
-    display: none;
-}
 
 /*BARRA NAVEGACION*/
 .general-header {
@@ -15,8 +12,8 @@
     align-items: center;
 }
 
-a:hover{
-    color: white !important;
+a{
+    cursor: pointer;
 }
 
 .general-header a{
@@ -36,7 +33,7 @@ a:hover{
     list-style: none;
     font-size: 2rem;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -44,19 +41,30 @@ a:hover{
 .section-container {
     background: rgb(38, 57, 89);
     background: linear-gradient(135deg, rgba(38, 57, 89, 1) 0%, rgba(74, 16, 56, 1) 100%);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card {
-    width: 12rem;
+    max-width: 30rem;
     border: none !important;
     border-radius: 0 !important;
     margin: 1rem;
     box-shadow: 5px 8px 5px #1e1e1e;
+    font-size: 2rem;
 }
-
+.card-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.card-people{
+    display: flex;
+    align-items: center;
+}
 .card:hover {
     transform: translateY(-15px);
     box-shadow: 5px 8px 5px #1e1e1e;
@@ -133,6 +141,8 @@ a:hover{
     flex-direction: row;
 }
 
+
+
 .card h2 {
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -149,22 +159,14 @@ a:hover{
 }
 
 .card p {
-    position: relative;
-    right: -0.5rem;
-    top: 1.85rem;
+    vertical-align: middle;
 }
 
-.number {
-    position: relative;
-    right: -6.5rem;
-    top: -0.65rem;
-}
+
+
 
 .user {
     width: 2rem;
-    position: relative;
-    right: -8rem;
-    top: -2.5rem;
 }
 
 /*FOOTER*/
@@ -216,7 +218,7 @@ footer a{
     top: 0.25rem;
 }
 
-a:hover {
+nav a:hover {
     color: white;
 }
 
