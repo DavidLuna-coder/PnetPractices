@@ -52,7 +52,7 @@ const rooms = [
   },
 ];
 
-const bigCard = $(".big-card");
+const bigCard = $(".big-card"); 
 console.log(bigCard.hidden);
 const cards = $$(".card");
 

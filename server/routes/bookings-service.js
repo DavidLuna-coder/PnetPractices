@@ -6,12 +6,11 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 let db;
-const uri = `mongodb+srv://DaviPnet:${process.env.MONGO_PASSWORD}@singitlouddb.gnfcxiu.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@singitlouddb.gnfcxiu.mongodb.net/?retryWrites=true&w=majority`;
 
 const Bookings = function () { };
 
 Bookings.prototype.connectDb = function (callback) {
-    console.log(MongoClient.connect);
     MongoClient.connect(
         uri,
         {

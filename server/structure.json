@@ -1,0 +1,11 @@
+{
+    "user":{
+        "name": "Laura",
+        "lastName": "Guerrero"
+    },
+    "startTime": "15:00",
+    "endTime": "16:00",
+    "date": "05/04/2023",
+    "numberOfPeoples": 5,
+    "room": 3
+}

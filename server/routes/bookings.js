@@ -5,7 +5,7 @@ const router = express.Router();
 const bookingsService = require("./bookings-service");
 let nextId = 2;
 
-router.get("/", (req, res) => {
+router.get("/",(req, res) => {
     bookingsService.getAll((err, bookings) => {
         if (err) {
             res.status(500).send({
@@ -30,7 +30,7 @@ router.get("/:id", (req, res) => {
                 msg: err,
             });
         } else if (booking.length === 0) {
-            res.status(404).send({ msg: "Movie Not Found" });
+            res.status(404).send({ msg: "Booking Not Found" });
         } else {
             res.status(200).send(booking);
         }
@@ -55,7 +55,7 @@ router.put("/:id", (req, res) => {
     const id = req.params.id;
     const updatedBooking = req.body;
 
-    bookingsService.update(id, booking, (err, numUpdates) => {
+    bookingsService.update(id, updatedBooking, (err, numUpdates) => {
         if (err) {
             res.status(500).msg({ msg: err });
         } else if (numUpdates.modifiedCount === 0) {
