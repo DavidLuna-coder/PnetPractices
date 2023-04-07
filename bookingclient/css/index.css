@@ -1,9 +1,31 @@
-th, tr{
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+th{
     text-align: center;
     margin: 0;
     border: 1px solid rgb(0, 0, 0);
 }
 table {
-    border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+form{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+input{
+    padding: 1rem 0 1rem 0 ;
 }

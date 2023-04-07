@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Reservas</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <h1 class="test">Reservas</h1>
-    <table >
+    <table>
         <thead>
             <th>ID</th>
             <th>Usuario</th>
@@ -17,13 +19,46 @@
             <th>Fecha</th>
             <th>Hora de Inicio</th>
             <th>Hora de Fin</th>
+            <th>Número de personas</th>
+
         </thead>
         <tbody id="listOfBookings">
-
         </tbody>
-    </table>
 
+    </table>
+    <form class="reservation-form">
+        <!-- Formulario para realizar una reserva, nombre apellidos, fecha hora de inicio hora de fin numero de personas y sala -->
+            <label for="options">Sala</label>
+            <select  name="sala" id="options" required>
+                <option value="">Selecciona una sala</option>
+                <option value="1">Sala 1</option>
+                <option value="2">Sala 2</option>
+                <option value="3">Sala 3</option>
+                <option value="4">Sala 4</option>
+                <option value="5">Sala 5</option>
+                <option value="6">Sala 6</option>
+            </select>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="col-12" required>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" class="col-12" required>
+
+            <label for="fecha">Fecha</label>
+            <input  type="date" name="fecha" id="fecha" required>
+            <label for="hora-inicio">Hora de inicio</label>
+            <input  name="horaInicio" type="time" step="3600" max="22:00" id="hora-inicio" required>
+            <label for="hora-fin">Hora de fin</label>
+            <input type="time" step="3600" name="horaFin" max="23:00" id="hora-fin" required>
+            <label for="numero-personas">Numero de personas</label>
+            <input  type="number" name="numeroPersonas" placeholder="Numero de personas" max="7"
+                min="1" id="numero-personas" required>
+   
+            <input class="submit-btn" type="submit" value="Reservar">
+
+    </form>
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/reservas.js"></script>
 </body>
+
 </html>
