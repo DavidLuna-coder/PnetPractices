@@ -41,9 +41,9 @@ Bookings.prototype.get = (_id, callback) => {
 Bookings.prototype.getAll = (callback) => db.find({}).toArray(callback);
 
 Bookings.prototype.update = (_id, updatedBooking, callback) => {
-    delete updatedMovie._id;
+    delete updatedBooking._id;
     return db.updateOne(
-        { id: ObjectId(_id) },
+        { _id: ObjectId(_id) },
         { $set: updatedBooking },
         callback
     );
