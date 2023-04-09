@@ -2,30 +2,90 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-th{
+
+/*TITULO*/
+h1{
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+/*TABLA*/
+th, td{
+    width: 10rem;
     text-align: center;
     margin: 0;
     border: 1px solid rgb(0, 0, 0);
 }
+
+th{
+    background-color: #fdf5e6;
+    text-decoration: underline;
+}
+
+tr:nth-child(odd) {
+    background-color: #e9ecef;
+}
+
 table {
     width: 80%;
     text-align: center;
     border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
+button {
+    display: inline-block;
+    background-color: #ced4da;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    
+}
+
+button:hover {
+    background-color: #6c757d;
+}
+
+/*FORMULARIO*/
 form{
+    font-family: 'Open Sans', sans-serif;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
     width: 80%;
 }
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
 
-input{
+input, select{
     padding: 1rem 0 1rem 0 ;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.submit-btn{
+    background-color: #dee2e6;
+    border: 0.5px solid black;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+}
+
+.submit-btn:hover{
+    background-color: #ced4da;   
 }
